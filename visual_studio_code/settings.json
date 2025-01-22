@@ -1,0 +1,40 @@
+{
+    "workbench.colorTheme": "Default Light Modern",
+
+    // Imports
+    // // Add and organize missing imports on save
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit",
+        "source.addMissingImports": "explicit"
+    },
+
+    // Python settings
+    "python.analysis.autoSearchPaths": true,
+
+    // It is common to put the package in the src directory
+    // so we tell the static analysis tools to look there
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/src"
+    ],
+    "python.envFile": "${workspaceFolder}/.env",
+    "python.terminal.activateEnvironment": true,
+
+    // Test settings
+    // These set pytest as the default 
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestEnabled": false,
+
+    // I store my tests in a /tests folder in the base directory
+    // you might change this if you have a different preference
+    "python.testing.cwd": "${workspaceFolder}/tests",
+
+    // We will be using virtual environments via uv, so this is the path
+    // to the project's pytest
+    "python.testing.pytestPath": "${workspaceFolder}/.venv/bin/pytest",
+    "python.testing.autoTestDiscoverOnSaveEnabled": true,
+    "editor.fontSize": 16,
+    "editor.fontFamily": "CaskaydiaCove Nerd Font Mono, Menlo, Monaco, 'Courier New', monospace",
+    "chat.editing.alwaysSaveWithGeneratedChanges": true,
+
+    "update.mode": "none"
+}
