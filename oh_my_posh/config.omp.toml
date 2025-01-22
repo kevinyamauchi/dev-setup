@@ -42,6 +42,15 @@ final_space = true
       fetch_status = true
 
 [[blocks]]
+  type = 'prompt'
+  alignment = 'right'
+
+  [[blocks.segments]]
+    type = "python"
+    background = "transparent"
+    template = " {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }}{{ end }}{{end}}"
+
+[[blocks]]
   type = 'rprompt'
   overflow = 'hidden'
 
